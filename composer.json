@@ -1,0 +1,35 @@
+{
+    "name": "kennebula/dingerpaymentintegration",
+    "description": "Payment Integration Services for aya provider",
+    "type": "composer-package",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "KenNebula\\DingerPaymentIntegration\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KenNebula\\DingerPaymentIntegration\\PackageServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "KenNebula",
+            "email": "hnineiphyucu@gmail.com"
+        }
+    ],
+    "require": {
+        "phpseclib/phpseclib": "~2.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "https://github.com/hnineiphyu-ken/DingerPaymentIntegration"
+        }
+    ]
+    
+}
