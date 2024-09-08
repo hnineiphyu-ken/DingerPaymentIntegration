@@ -62,12 +62,15 @@ Send Payment (to get redirect url) :
     use KenNebula\DingerPaymentIntegration\Dinger;
 
     AYA::sendPayment(@multidimensionalArray $items,@String $customer_name, @Int $total_amount, @String $merchant_order_no);
-* Note 
 
-* items array must be include name, amount, quantity.
-* customerName must be string.
-* totalAmount must be integer.
-* merchantOrderId must be string.
+> **Note**  
+> - `items` array must include:
+>   - `name`
+>   - `amount`
+>   - `quantity`
+> - `customerName` must be a string.
+> - `totalAmount` must be an integer.
+> - `merchantOrderId` must be a string.
 
 Load Output 
 ---------
@@ -81,10 +84,9 @@ Extract Callback Data:
 
     Dinger::callback(@String $paymentResult,@String $checkSum);
 
-* Note 
-
-* paymentResult must be string.
-* checkSum must be string.
+> **Note**  
+> - `paymentResult` must be a string.
+> - `checkSum` must be a string.
 
 Callback Output 
 ------
